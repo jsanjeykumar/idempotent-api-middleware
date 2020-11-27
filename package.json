@@ -1,5 +1,5 @@
 {
-  "name": "ideompotent-token-middleware",
+  "name": "ideompotent-middleware",
   "version": "1.0.0",
   "main": "validator.js",
   "dependencies": {
