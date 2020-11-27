@@ -1,7 +1,7 @@
 {
   "name": "ideompotent-a",
-  "version": "1.0.5",
-  "main": "./.build/validator.js",
+  "version": "1.0.6",
+  "main": "validator.ts",
   "dependencies": {
     "axios": "^0.21.0",
     "express": "^4.17.1",
