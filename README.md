@@ -57,6 +57,7 @@ The following tools were used in this project:
 ## :Requirements ##
 
 ### Database Configuration
+Make your Database like this 
 * Schema :<b>  transaction</b>
  * #### Table  :  <b>token</b>
    * Fields : \
