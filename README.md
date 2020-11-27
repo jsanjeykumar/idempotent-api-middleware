@@ -103,7 +103,7 @@ Make your Database like this
 This project is  un-licensed.
 
 
-Made with :heart: by <a href="https://github.com/jsanjeykumar" target="_blank">Sanjay Kumar</a>
+Developed by <a href="https://github.com/jsanjeykumar" target="_blank">Sanjay Kumar</a>
 
 &#xa0;
 
