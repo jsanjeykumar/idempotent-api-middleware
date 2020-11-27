@@ -7,7 +7,7 @@ import tokenValidator from './tokenValidatorMiddleware'
 import routes from './routes'
 
 const app = new App({
-  port: process.env.PORT,
+  port: 8080,
   middleWares: [
     bodyParser.json(),
     loggerMiddleware,

@@ -15,7 +15,7 @@
     
     "predev": "rm -rf .build/ && git pull",
     "dev": "yarn && tsc && pm2 start ecosystem.config.js",
-    "postdev": "pm2 logs wallet-transfer"
+    "postdev": "pm2 logs ideompotent-middleware"
     
   },
   "devDependencies": {

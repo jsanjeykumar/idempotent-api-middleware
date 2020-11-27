@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'wallet-transfer',
+      name: 'ideompotent-middleware',
       script: '.build/src/server.js',
       exec_mode: 'fork',
       watch: true,
