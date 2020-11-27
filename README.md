@@ -85,19 +85,19 @@ Make your Database like this
  Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions
   eg:
 ```graphql
- query getToken(($token: String!) {\
-    transaction_token_by_pk(token: $token) {\
-    ref_id\
-    is_active\
-    is_request_received\
-    request\
-    response\
-    process\
-    initiated_at\
-    completed_at\
-  }\
+ query getToken(($token: String!) {
+    transaction_token_by_pk(token: $token) {
+    ref_id
+    is_active
+    is_request_received
+    request
+    response
+    process
+    initiated_at
+    completed_at
+  }
 }
- 
+ ```
 ## :License ##
 
 This project is  un-licensed.
