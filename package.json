@@ -1,5 +1,5 @@
 {
-  "name": "wallet-transfer",
+  "name": "ideompotent-token-middleware",
   "version": "1.0.0",
   "main": "validator.js",
   "dependencies": {
@@ -11,20 +11,11 @@
     "uuid": "^8.3.1"
   },
   "scripts": {
-    "compile": "tsc --watch",
-    "test": "jest --watchAll",
-    "logs": "pm2 logs wallet-transfer",
-    "del": "rm -rf .build/ && pm2 del wallet-transfer",
+    
     "predev": "rm -rf .build/ && git pull",
     "dev": "yarn && tsc && pm2 start ecosystem.config.js",
-    "postdev": "pm2 logs wallet-transfer",
-    "preprod": "rm -rf .build/ && git pull",
-    "prod": "yarn && tsc && pm2 start ecosystem.config.js --env prod",
-    "postprod": "pm2 logs wallet-transfer",
-    "buildtime": "ls -al",
-    "reloadconfig": "pm2 reload ecosystem.config.js --update-env",
-    "local": "yarn && tsc && pm2 start ecosystem.config.js",
-    "postlocal": "pm2 logs wallet-transfer"
+    "postdev": "pm2 logs wallet-transfer"
+    
   },
   "devDependencies": {
     "@types/express": "^4.17.8",
