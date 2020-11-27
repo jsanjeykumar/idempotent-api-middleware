@@ -83,8 +83,8 @@ Make your Database like this
     
 * ### Graphql  :
  Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions
-
- eg: ```graphql
+  eg:
+```graphql
  query getToken(($token: String!) {\
     transaction_token_by_pk(token: $token) {\
     ref_id\
@@ -97,7 +97,7 @@ Make your Database like this
     completed_at\
   }\
 }
-```
+ 
 ## :License ##
 
 This project is  un-licensed.
