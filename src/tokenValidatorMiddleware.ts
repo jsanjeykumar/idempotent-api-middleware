@@ -11,6 +11,9 @@ import { STATUS } from './tokenConstants';
 
 let tokenService: TokenService = new TokenService();
 
+let getActiveToken = async(ref_id:number ,process:string )=> await tokenService.getActiveToken(ref_id , process )
+
+
 let validateToken = async (req: Request, res: Response, next: NextFunction) => {
     
     let url = req.originalUrl;
@@ -71,4 +74,4 @@ async function  deactivateToken( req:Request,res: Response) {
     });
 }
 
-export default validateToken
+export { validateToken ,getActiveToken }

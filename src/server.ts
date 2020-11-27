@@ -2,7 +2,7 @@ import App from './config/app'
 
 import bodyParser from 'body-parser'
 import loggerMiddleware from '../temp/ApiLogger'
-import tokenValidator from './tokenValidatorMiddleware'
+import { validateToken } from './tokenValidatorMiddleware'
 
 import routes from './routes'
 
@@ -11,7 +11,7 @@ const app = new App({
   middleWares: [
     bodyParser.json(),
     loggerMiddleware,
-    tokenValidator
+    validateToken
   ],
   routes: routes
 })
