@@ -1,8 +1,7 @@
-# Created on November-27-2020
-# Created by sanjay kumar
-
+# Who I am ?
+Idempotent API Filter
 # What I Do ?
-  I will make your request Ideompotent and restrict duplicate API request if you follow my standards
+  I will make your API request Idempotent and restrict duplicate API request if you follow my standards
 
 # How can you configure me ?
 
@@ -34,7 +33,7 @@ app.use(validateToken)
     response:String             -> Response
     completed_at:timestamp
     status:String               -> transction status
-    steps:String                -> Error status
+    steps:String                -> Error Occured Stage
 
 * Table : process
 * Fields :
