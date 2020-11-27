@@ -42,8 +42,8 @@ The following tools were used in this project:
 ## :Requirements ##
 
 ### Database Configuration
-* Schema :  transaction
- * #### Table  :  token
+* Schema :<b>  transaction</b>
+ * #### Table  :  <b>token</b>
    * Fields : \
     id :In---> auto-generated id\
     ref_id :Int                 ---> process respective to transaction (eg: bank_account_no,employee_id)\
@@ -59,7 +59,7 @@ The following tools were used in this project:
     status:String               ---> transction status\
     steps:String                ---> Error Occured Stage
 
- * #### Table  :  process
+ * #### Table  :  <b>process</b>
    * Fields :\
     id :Int                     ---> auto-generated id\
     name:String                 ---> process name (eg: BOOK_ORDER,CANCEL_ORDER )\
