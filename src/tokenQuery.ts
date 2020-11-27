@@ -8,8 +8,8 @@ import { ErrorCode } from './utils/ErrorCode'
 import { now, isNil } from 'lodash';
 import ApplicationError from './utils/ApplicationError';
 
-const gqlConfig:GqlConfig = new GqlConfig('https://dcore.olog.in/v1/graphql')
-let headers = { 'x-hasura-admin-secret' :'freightolog@123'}
+const gqlConfig:GqlConfig = new GqlConfig('')
+let headers = { '' :''}
 gqlConfig.setHeaders(headers)
 const graphqlConfig:GraphQLClient  = gqlConfig.getGqlConfig()
 
