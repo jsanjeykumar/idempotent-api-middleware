@@ -3,18 +3,9 @@
 
   &#xa0;
 
-  <!-- <a href="https://ideompotentcyvalidator.netlify.app">Demo</a> -->
 </div>
 
 <h1 align="center">Idempotentcy Validator</h1>
-
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Ideompotentcy Validator 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
@@ -22,7 +13,7 @@
   <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#configuration">Configuration</a> &#xa0; | &#xa0;
   <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#license">License</a> &#xa0; | &#xa0;
+  <a href="#license">License</a>
 </p>
 
 <br>
@@ -53,29 +44,29 @@ The following tools were used in this project:
 ### Database Configuration
 * Schema :  transaction
  * #### Table  :  token
-   * Fields :
-    id :Int                     -> auto-generated id\
-    ref_id :Int                 -> process respective to transaction (eg: bank_account_no,employee_id)\
-    token :String               -> auto-generated UUID -> primary key\
-    process :String             -> process name (Foreign key to )\
-    is_active :Boolean          -> token status\
-    is_request_received:Boolean -> token request received at\
-    request:String              -> Request\
+   * Fields : \
+    id :In---> auto-generated id\
+    ref_id :Int                 ---> process respective to transaction (eg: bank_account_no,employee_id)\
+    token :String               ---> auto-generated UUID -> primary key\
+    process :String             ---> process name (Foreign key to )\
+    is_active :Boolean          ---> token status\
+    is_request_received:Boolean ---> token request received at\
+    request:String              ---> Request\
     request_received_at:timestamp\
     initiated_at:timestamp\
-    response:String             -> Response\
+    response:String             ---> Response\
     completed_at:timestamp\
-    status:String               -> transction status\
-    steps:String                -> Error Occured Stage
+    status:String               ---> transction status\
+    steps:String                ---> Error Occured Stage
 
  * #### Table  :  process
    * Fields :\
-    id :Int                     -> auto-generated id\
-    name:String                 -> process name (eg: BOOK_ORDER,CANCEL_ORDER )\
-    entity:String               -> process respective to (eg: ORDER , PAYMENT )
+    id :Int                     ---> auto-generated id\
+    name:String                 ---> process name (eg: BOOK_ORDER,CANCEL_ORDER )\
+    entity:String               ---> process respective to (eg: ORDER , PAYMENT )
     
 * ### Graphql  :
- Either use Hasura Graohql Query  or Follow Hasura Graohql Query Standards for Graphql Query and mutation for Database actions
+ Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions
 
 ## :Configuration ##
 
