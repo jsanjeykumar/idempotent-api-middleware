@@ -1,6 +1,6 @@
 {
-  "name": "ideompotent-a",
-  "version": "1.0.18",
+  "name": "ideompotentcy-validator",
+  "version": "1.0.0",
   "main": ".build/validator",
   "types": ".build/validator.d.ts",
   "dependencies": {
@@ -17,7 +17,7 @@
   "scripts": {
     "predev": "rm -rf .build/ && git pull",
     "dev": "yarn && tsc && pm2 start ecosystem.config.js",
-    "postdev": "pm2 logs ideompotent-a"
+    "postdev": "pm2 logs ideompotentcy-validator"
     
 
   }
