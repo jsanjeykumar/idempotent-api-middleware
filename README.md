@@ -82,7 +82,7 @@ Make your Database like this
     entity:String               ---> process respective to (eg: ORDER , PAYMENT )
     
 * ### Graphql  :
- Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions
+ Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions \
   eg:
 ```graphql
  query getToken(($token: String!) {
