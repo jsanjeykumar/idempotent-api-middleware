@@ -1,6 +1,6 @@
 {
-  "name": "ideompotent-middleware",
-  "version": "1.0.3",
+  "name": "ideompotent-a",
+  "version": "1.0.0",
   "main": "./.build/validator.js",
   "dependencies": {
     "axios": "^0.21.0",
