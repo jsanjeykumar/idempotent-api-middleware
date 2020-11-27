@@ -8,8 +8,9 @@ import { ErrorCode } from './utils/ErrorCode'
 import { now, isNil } from 'lodash';
 import ApplicationError from './utils/ApplicationError';
 
-const gqlConfig:GqlConfig = new GqlConfig('')
-let headers = { '' :''}
+
+const gqlConfig:GqlConfig = new GqlConfig('https://dcore.olog.in/v1/graphql')
+let headers = { 'x-hasura-admin-secret' :'freightolog@123'}
 gqlConfig.setHeaders(headers)
 const graphqlConfig:GraphQLClient  = gqlConfig.getGqlConfig()
 
@@ -47,7 +48,7 @@ const getActiveToken = async (ref_id: number, process: string, is_active: boolea
     return null
   }
   if (activeToken.length > 1) {
-    throw new ApplicationError(ErrorCode.E001, `INVALID_TOKEN`)
+    throw new ApplicationError(ErrorCode.E002, `INVALID_TOKEN`)
   }
   return activeToken[0].token;
 }
@@ -81,7 +82,7 @@ const createToken = async (token: string, ref_id: number, is_active: boolean, pr
     .then(data => data.insert_transaction_token_one.token)
   console.log('createToken query- ', createdToken)
   if (isNil(createdToken)) {
-    throw new ApplicationError(ErrorCode.E001, `INVALID_TOKEN`)
+    throw new ApplicationError(ErrorCode.E002, `INVALID_TOKEN`)
   }
 
   return createdToken
@@ -117,7 +118,7 @@ const deactivateToken = async (token: string, is_active: boolean, response: stri
   let tokenData = <UpdatePartnerTokenResult>await graphqlConfig.request(_deactivateTokenQuery, { token, is_active, response, status, steps, completed_at: currentTime })
 
   if (tokenData.update_transaction_token.affected_rows != 1) {
-    throw new ApplicationError(ErrorCode.E002, `TOKEN_VALIDATION`)
+    throw new ApplicationError(ErrorCode.E004, `TOKEN_VALIDATION`)
   }
   let updatedTokenDetails = tokenData.update_transaction_token.returning[0];
   console.log("deactivatedToken - ", updatedTokenDetails)

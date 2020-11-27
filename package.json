@@ -1,7 +1,7 @@
 {
   "name": "ideompotent-middleware",
   "version": "1.0.0",
-  "main": "validator.js",
+  "main": "./.build/validator.js",
   "dependencies": {
     "axios": "^0.21.0",
     "express": "^4.17.1",
@@ -10,6 +10,7 @@
     "lodash": "^4.17.20",
     "uuid": "^8.3.1"
   },
+  
   "scripts": {
     
     "predev": "rm -rf .build/ && git pull",
