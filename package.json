@@ -1,6 +1,6 @@
 {
   "name": "ideompotentcy-validator",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": ".build/validator",
   "types": ".build/validator.d.ts",
   "dependencies": {
