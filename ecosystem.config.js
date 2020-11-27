@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'ideompotent-middleware',
-      script: '.build/src/server.js',
+      name: 'ideompotent-a',
+      script: '.build/src/validator.js',
       exec_mode: 'fork',
       watch: true,
       autorestart: true,

@@ -1,6 +1,6 @@
 {
   "name": "ideompotent-a",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "validator.js",
   "dependencies": {
     "axios": "^0.21.0",
