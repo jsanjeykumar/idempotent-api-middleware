@@ -1,7 +1,8 @@
 {
   "name": "ideompotent-a",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "./.build/validator.js",
+  "types": "./.build/validator.d.ts",
   "dependencies": {
     "express": "^4.17.1",
     "graphql": "^15.4.0",
@@ -16,7 +17,10 @@
   "scripts": {
     "predev": "rm -rf .build/ && git pull",
     "dev": "yarn && tsc && pm2 start ecosystem.config.js",
-    "postdev": "pm2 logs ideompotent-middleware"
+    "postdev": "pm2 logs ideompotent-middleware",
+    "prepublish": "tsc",
+    "publish": "npm publish"
+
   }
   
 }
