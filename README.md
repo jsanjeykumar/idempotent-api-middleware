@@ -10,8 +10,8 @@
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
   <a href="#features">Features</a> &#xa0; | &#xa0;
-  <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#configuration">Configuration</a> &#xa0; | &#xa0;
+  <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#license">License</a>
 </p>
@@ -25,6 +25,21 @@ I am an express js API middleware .I will make your API request Idempotent and r
 ## :Features ##
 * create an active token for each post request
 * validate token on each request 
+
+## :Configuration ##
+
+```js
+import express from 'express'
+import {GqlConfig,validateToken} from 'ideompotent-a'
+const app = express()
+
+const gqlConfig:GqlConfig = new GqlConfig('https://graphqlhost.in/v1/graphql')
+let headers = { 'auth' :'xxxx'}
+gqlConfig.setHeaders(headers)
+const graphqlConfig:GraphQLClient  = gqlConfig.getGqlConfig()
+
+app.use(validateToken)
+```
 
 ## :Technologies ##
 
@@ -67,22 +82,6 @@ The following tools were used in this project:
     
 * ### Graphql  :
  Either use Hasura Graphql Query  or Follow Hasura Graphql Query Standards for Graphql Query and mutation for Database actions
-
-## :Configuration ##
-
-```js
-import express from 'express'
-import {GqlConfig,validateToken} from 'ideompotent-a'
-const app = express()
-
-const gqlConfig:GqlConfig = new GqlConfig('https://graphqlhost.in/v1/graphql')
-let headers = { 'auth' :'xxxx'}
-gqlConfig.setHeaders(headers)
-const graphqlConfig:GraphQLClient  = gqlConfig.getGqlConfig()
-
-app.use(validateToken)
-```
-
 ## :License ##
 
 This project is  un-licensed.
