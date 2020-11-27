@@ -1,8 +1,8 @@
 {
   "name": "ideompotent-a",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./.build/validator.js",
-  "types": "./.build/validator.d.ts",
+  "types": "./validator.ts",
   "dependencies": {
     "express": "^4.17.1",
     "graphql": "^15.4.0",
