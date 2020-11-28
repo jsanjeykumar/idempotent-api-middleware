@@ -30,7 +30,7 @@ I am an express js API middleware .I will make your API request Idempotent and r
 
 ```js
 import express from 'express'
-import {GqlConfig, validateToken, getActiveToken } from 'ideompotent-a'
+import {GqlConfig, validateToken, getActiveToken } from 'idempotent-api-middleware'
 const app = express()
 
 const gqlConfig:GqlConfig = new GqlConfig('https://graphqlhost.in/v1/graphql')
