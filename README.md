@@ -5,7 +5,7 @@
 
 </div>
 
-<h1 align="center">Idempotentcy Validator</h1>
+<h1 align="center">Idempotentcy Validator - beta</h1>
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
