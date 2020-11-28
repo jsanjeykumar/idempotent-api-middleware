@@ -56,6 +56,12 @@ The following tools were used in this project:
 
 ## :Requirements ##
 
+### API Convention
+Just add <b>/secured</b> in your API uri \
+eg : https://127.0.0.1/secured/book/now
+
+The API uri that contains "/secured" will be validated for idempotency
+
 ### Database Configuration
 Make your Database like this 
 * Schema :<b>  transaction</b>
