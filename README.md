@@ -30,7 +30,7 @@ I am an express js API middleware .I will make your API request Idempotent and r
 
 ```js
 import express from 'express'
-import {GqlConfig,validateToken} from 'ideompotent-a'
+import {GqlConfig, validateToken, getActiveToken } from 'ideompotent-a'
 const app = express()
 
 const gqlConfig:GqlConfig = new GqlConfig('https://graphqlhost.in/v1/graphql')
@@ -60,7 +60,26 @@ The following tools were used in this project:
 Just add <b>/secured</b> in your API uri \
 eg : https://127.0.0.1/secured/book/now
 
-The API uri that contains "/secured" will be validated for idempotency
+- The API uri that contains "/secured" will be validated for idempotency
+
+- Before hitting the secured API call **getActiveToken(ref_id:number ,process:string )** and get the unique token for the API.
+
+- While hitting the secured API set the header **'idempotent-token'** and **'process'**
+
+eg:
+```js
+let process = 'PAY_NOW'
+let unique_token:string = getActiveToken(ref_id:number ,process:string )
+
+curl --location --request POST 'http://localhost:/order/now' \
+--header 'Content-Type: application/json' \
+--header 'idempotent-token: unique_token' \
+--header 'process: PAY_NOW' \
+--data-raw '{
+    "member_id": 3018,
+    "amount": 10,
+    "created_by": "abc@123.in"
+}' ```
 
 ### Database Configuration
 Make your Database like this 
@@ -110,7 +129,7 @@ This project is  un-licensed.
 
 
 Developed by <a href="https://github.com/jsanjeykumar" target="_blank">Sanjay Kumar</a>
-
+Reach me <a href="mailto:sanjay.k@fr8.in">sanjay.k@fr8.in</a>
 &#xa0;
 
 <a href="#top">Back to top</a>
