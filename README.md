@@ -1,11 +1,11 @@
 <div align="center" id="top"> 
-  <img src="https://www.fr8.in/images/logo.png" alt="Ideompotentcy Validator" />
+  <img src="https://www.fr8.in/images/logo.png" alt="Idempotent-api-middleware" />
 
   &#xa0;
 
 </div>
 
-<h1 align="center">Idempotentcy Validator - beta</h1>
+<h1 align="center">Idempotent-api-middleware - beta</h1>
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
