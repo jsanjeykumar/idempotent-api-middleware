@@ -70,7 +70,7 @@ eg:
 ```js
 let process = 'PAY_NOW'
 let unique_token:string = getActiveToken(ref_id:number ,process:string )
-
+```
 curl --location --request POST 'http://localhost:/order/now' \
 --header 'Content-Type: application/json' \
 --header 'idempotent-token: unique_token' \
@@ -79,7 +79,7 @@ curl --location --request POST 'http://localhost:/order/now' \
     "member_id": 3018,
     "amount": 10,
     "created_by": "abc@123.in"
-}' ```
+}' 
 
 ### Database Configuration
 Make your Database like this 
@@ -120,7 +120,7 @@ Make your Database like this
     process
     initiated_at
     completed_at
-  }
+       }
 }
  ```
 ## :License ##
@@ -128,8 +128,7 @@ Make your Database like this
 This project is  un-licensed.
 
 
-Developed by <a href="https://github.com/jsanjeykumar" target="_blank">Sanjay Kumar</a>
-Reach me <a href="mailto:sanjay.k@fr8.in">sanjay.k@fr8.in</a>
-&#xa0;
+Developed by <a href="https://github.com/jsanjeykumar" target="_blank">Sanjay Kumar</a> 
+<p>Contact :sanjay.k@fr8.in&#xa0;</p>
 
 <a href="#top">Back to top</a>
