@@ -20,7 +20,7 @@
 
 ## :About ##
 
-I am an express js API middleware .I will make your API request Idempotent by restricting duplicate API request and store the requestObject , responseObject and status of the request .
+I am an express js API middleware .I will make your API request Idempotent by restricting duplicate API request and store the requestObject , responseObject and status of the request in database .
 
 ## :Features ##
 * create an active token for each post request
