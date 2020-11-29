@@ -7,3 +7,4 @@ package-lock.json
 
 .idea
 .Ds_Store
+.vscode/settings.json
